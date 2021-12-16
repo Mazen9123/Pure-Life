@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pure Site | Homepage</title>
+	<link href="css/all.min.css" rel="stylesheet">
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+
+	
+	
+	
+	
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			overflow-x: hidden;
+		}
+		*::before{
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}	
+		*::after{
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+	
+		body{
+			margin: 0px;
+			padding: 0px;
+		
+		}
+		
+		/*.nav_container{
+			position: relative;
+			width: 100%;
+			height: 10vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}*/
+		.bg_container{
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+			background-image: url("Images/Beautiful_Sunrise_on_the_Sea_Background-817.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.nav{
+			width: 90%;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			height: 10vh;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid white;
+			padding-bottom: 5px;
+			margin: 0px auto;
+		}
+		.nav ul{
+			list-style: none;
+			width: 50%;
+			align-self: flex-end;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 100%;
+		}
+		.nav a{
+			color: white;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.nav a:hover{
+			color: white;
+			text-decoration: none;
+		}
+	
+		.nav i{
+			margin-right: 2px;
+			margin-left: 2px;
+		}
+		.row,.col-12,.container-fluid{
+			padding: 0px;
+			margin: 0px;
+		}
+		.first_main_text{
+			max-width: 50%;
+			margin: auto;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.first_main_text span{
+			color: white;
+			
+			font-size: 36pt;
+			font-weight: 600;
+			text-align: center;
+		}
+		.first_main_text button{
+			color: white;
+		
+			font-size: 12pt;
+			font-weight: 400;
+			text-align: center;
+			border: 1px solid white;
+			background: transparent;
+			padding: 5px;
+		}
+		.center_text{
+			text-align: center;
+			margin: 50px auto;
+			width: 50%;
+		}
+		.center_text h3{
+			color:rgba(21,111,195,1.00);
+			
+			font-size: 24pt;
+			font-weight: 600;
+			text-align: center;
+		}
+		.center_text button{
+					color: #111;
+			
+			font-size: 12pt;
+			font-weight: 600;
+			text-align: center;
+			border: 1px solid white;
+			background:rgba(213,111,21,1.00);
+			padding: 10px 20px;
+		}
+		h1,h2,h3,h4,h5,h6{
+			overflow: hidden;
+		}
+			.dual_text{
+		display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: left;
+			width: 70%;
+				margin: 50px auto;
+		}
+		.dual_text h3{
+			color:rgba(21,111,195,1.00);
+		
+			font-size: 24pt;
+			font-weight: 600;
+			text-align: left;
+		}
+		.dual_text button{
+					color: #111;
+			
+			font-size: 12pt;
+			font-weight: 600;
+			text-align: center;
+			border: 1px solid white;
+			background:rgba(213,111,21,1.00);
+			padding: 10px 20px;
+		}
+		.dual_text p{
+			
+			padding-right: 50px;
+			margin: 0px;
+		}
+		.dual_text img{
+			border-radius: 25px;
+		}
+		h3{
+			color:rgba(21,111,195,1.00);
+			
+			font-size: 24pt;
+			font-weight: 600;
+			text-align: center;
+		}
+		.center_card{
+			width: 80%;
+			justify-content: space-around;
+			align-items: center;
+			display: flex;
+			margin: 0px auto;
+		}
+		.center_card .card{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 15px;
+			margin: 40px;
+			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15),-3px 3px 5px 0px rgba(0,0,0,0.15); 
+		}
+		.center_card .card_icon{
+			border-radius: 100px;
+			font-size: 1.5em;
+			width: 50px;
+			height: 50px;
+			background-color: var(--i);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+margin: 20px 0px;
+		}
+		.center_card .card_description{
+			max-width: 90%;
+			margin: 0px auto;
+			text-align: center;
+			font-size: 12pt;
+		}
+		
+		.news{
+			width: 90%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin: auto;
+		}
+		.news .card{
+			display: flex;
+			flex-direction: column;
+			margin: 45px;
+			text-align: left;
+			justify-content: center;
+			padding: 5px;
+		}
+		.news .card_img{
+			width: 100%;
+			height: 200px;
+		}
+		.news .news_title{
+			font-weight: 600;
+			font-size: 14pt;
+		}
+		.news span{
+			color:rgba(21,111,195,1.00);
+			margin-top: 20px;
+		}
+		.news button{
+					color: #fff;
+			width: 60%;
+			margin: 10px auto;
+			border-radius: 100px;
+			font-size: 12pt;
+			font-weight: 600;
+			text-align: center;
+			border: 1px solid white;
+			background:rgba(213,111,21,1.00);
+			padding: 5px 10px;
+		}
+		.form_container{
+			width: 100%;
+			position: relative;
+			background: url("Images/Beautiful_Sunrise_on_the_Sea_Background-817.jpg");
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.form_container form{
+			width: 50%;
+			margin: auto;
+			padding:100px;
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: relative;
+			z-index: 2;
+		}
+		.form_container form::before{
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			opacity: 0.7;
+			z-index: -1;
+		}
+		.form_container form h3{
+			color: #111;
+			font-size: 16pt;
+			text-align: left;
+			display: flex;
+			align-self: flex-start;
+		}
+		.form_container form input{
+			background: none;
+			color: black;
+			border: none;
+			outline: none;
+			border-bottom: 1px solid grey;
+			text-align: left;
+		 width: 100%;
+			padding: 5px;
+			margin: 10px 0px;
+		}
+			.form_container button{
+					color: #fff;
+			width: 100%;
+			margin: 0px auto;
+				margin-top: 50px;
+			font-size: 12pt;
+			font-weight: 600;
+			text-align: center;
+			border:none;
+			background:rgba(213,111,21,1.00);
+			padding: 5px 10px;
+		}
+		
+		
+		footer{
+			width: 100%;
+			display: flex;
+			position: relative;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			padding: 50px 100px;
+			color: black;
+		}
+		footer .links{
+			display: flex;
+			justify-content: space-around;
+			
+		}
+		footer h2{
+			margin-bottom: 25px;
+		}
+		footer .links a{
+			color: black;
+			text-decoration: none;
+			margin: 10px;
+			font-size: 12pt;
+		}
+		footer .links a:hover{
+			color:rgba(21,111,195,1.00);
+		}	
+		footer .links a.active{
+			color:rgba(21,111,195,1.00);
+		}
+		footer .social{
+			display: flex;
+			justify-content: space-around;
+			margin: 10px 0px 20px 0px;
+		}
+		footer .social a{
+			color: black;
+			text-decoration: none;
+			margin: 10px;
+			font-size: 1.5em;
+		}
+		footer .social a:hover{
+			color:rgba(21,111,195,1.00);
+		}	
+		footer .social a.active{
+			color:rgba(21,111,195,1.00);
+		}
+		footer span a{
+			color:rgba(21,111,195,1.00);
+			text-decoration: none;
+		}
+		footer span a:hover{
+			color:rgba(21,111,195,1.00);
+			text-decoration: none;
+		}
+		
+	
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+	<div class="row bg_container">
+		<div class="col-12">
+			<div class="nav">
+		<h2 class="overflow-hidden"><a href="#!" class="overflow-hidden">Pure Life</a></h2>
+		<ul>
+			<li><a href="#!">Home</a></li>
+			<li><a href="#!">About Us</a></li>
+			<li><a href="#!">Our Market<i class="fas fa-caret-down"></i></a></li>
+			<li><a href="#!">Media</a></li>
+			<li><a href="#!">Contact Us</a></li>
+			<li><a href="#!"><i class="fas fa-search"></i></a></li>
+			
+			
+			
+			
+			
+			</ul>
+		
+		
+		
+		
+		
+		
+		</div>
+		
+		</div>
+		<div class="col-12 first_main_text">
+		<span>Living Healthy Life Requires Pure Life Materials Not Chemical Ones</span>
+		<button>Read More</button>
+		</div>
+		</div>
+	
+	<div class="row">
+		<div class="col-12">
+			<div class=" center_text">
+		<h3>Who We Are</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quo tempora. Voluptas possimus officiis dolorem illo incidunt blanditiis quod ex eaque, itaque ipsum, laudantium pariatur. Laboriosam commodi vel iusto voluptates.</p>
+		<button>Read More</button>
+				</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-12">
+			<div class="dual_text">
+				<div>
+		<h3>Why Pure Life</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quo tempora. Voluptas possimus officiis dolorem illo incidunt blanditiis quod ex eaque, itaque ipsum, laudantium pariatur. Laboriosam commodi vel iusto voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quo tempora. Voluptas possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quo tempora.<br>
+<br>
+			 Quia, quo tempora. Voluptas possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quo tempora.
+</p>
+		<button>Read More</button>
+			</div>
+				<img class="img-fluid" src="Images/g3tz9zY.jpg">
+				</div>
+		</div>
+		</div>
+	
+		
+		
+			<div class="row">
+		<div class="col-12 text-center">
+			<h3>The Oppurtunity</h3>
+			<div class=" center_card">
+		
+		<div class="card">
+				<div class="card_icon" style="--i:#04c28c"><i class="fas fa-hand-holding-water"></i></div>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				</div>
+				<div class="card">
+				<div class="card_icon" style="--i:#5e56ff"><i class="fas fa-heartbeat"></i></div>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				</div>
+				<div class="card">
+				<div class="card_icon" style="--i:#fdbc2a"><i class="fas fa-praying-hands"></i></div>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				</div>
+				</div>
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-12 text-center">
+			<h3>Latest News</h3>
+			<div class="news">
+		
+		<div class="card">
+			<img class="card_img" src="Images/MOST BEAUTIFUL PLACES IN FRANCE YOU SHOULD CHECK OUT.png">
+				<div class="news_title">Sea Nature is Very Beautiful</div>
+			<span>12 December 2021</span>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				<button>Read More</button>
+				</div>
+				<div class="card">
+			<img class="card_img" src="Images/A Guide to Colorado's Spectacular Wildflower Season.png">
+				<div class="news_title">Flower Nature is Very Beautiful</div>
+			<span>11 December 2021</span>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				<button>Read More</button>
+				</div>
+				<div class="card">
+			<img class="card_img" src="Images/50 Most Beautiful Places In The World - The Crazy Tourist.jfif">
+				<div class="news_title">WaterFall Nature is Very Beautiful</div>
+			<span>10 December 2021</span>
+				<div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est saepe laboriosam facilis, itaque voluptate fugit.facilis, itaque voluptate fugit.</div>
+				<button>Read More</button>
+				</div>
+				
+				</div>
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-12">
+			<div class="form_container">
+				
+			<form method="post" action="" name="subscribe">
+				<h3>Join Our Community</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				
+				
+				<input type="email" name="Email" placeholder="Email">
+				<input type="password" name="Password" placeholder="Password">
+				<button type="submit">Subscribe</button>
+				</form>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+			
+			</div>
+		
+		</div>
+		<div class="row">
+		
+		<div class="col-12">
+			<footer>
+			<h2>Pure Life</h2>
+			<ul class="links">
+				<li><a href="#!" class="active">Home</a></li>
+				<li><a href="#!">About Us</a></li>
+				<li><a href="#!">Who Are We</a></li>
+				<li><a href="#!">Our Market</a></li>
+				<li><a href="#!">Media</a></li>
+				<li><a href="#!">Contact Us</a></li>
+				
+				
+				
+				</ul>
+			<ul class="social">
+				<li><a href="#!"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			<span>©️2021 PureLife | All Rhights Reserved | This Site is Developed By <a href="https://www.technoarabs.cf">TechnoArabs</a></span>
+			</footer>
+			
+			
+			
+			</div>
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	
+	</div>
+	
+	
+	
+		<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+</body>
+</html>
